@@ -7,14 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB0C65CF20BFA84500CA574A /* t.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0C65CE20BFA84500CA574A /* t.jpg */; };
+		AB0C65D120BFA8B800CA574A /* h.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0C65D020BFA8B800CA574A /* h.jpg */; };
+		AB0C65D520C01CBE00CA574A /* w.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0C65D420C01CBE00CA574A /* w.jpg */; };
+		AB8CAFC820B5390500AEEFDC /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = AB8CAFC720B5390500AEEFDC /* SimpleVertex.glsl */; };
+		AB8CAFCA20B53A9100AEEFDC /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = AB8CAFC920B53A9100AEEFDC /* SimpleFragment.glsl */; };
+		AB8CAFE920B6924700AEEFDC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9C5EF020B40B10000E60E9 /* OpenGLES.framework */; };
+		AB8CAFF320B6A2B400AEEFDC /* RWTBase.fsh in Resources */ = {isa = PBXBuildFile; fileRef = AB8CAFED20B6A2B400AEEFDC /* RWTBase.fsh */; };
+		AB8CAFF420B6A2B400AEEFDC /* RWTMoon.fsh in Resources */ = {isa = PBXBuildFile; fileRef = AB8CAFEE20B6A2B400AEEFDC /* RWTMoon.fsh */; };
+		AB8CAFF520B6A2B400AEEFDC /* RWTGradient.fsh in Resources */ = {isa = PBXBuildFile; fileRef = AB8CAFEF20B6A2B400AEEFDC /* RWTGradient.fsh */; };
+		AB8CAFF620B6A2B400AEEFDC /* RWTSphere.fsh in Resources */ = {isa = PBXBuildFile; fileRef = AB8CAFF020B6A2B400AEEFDC /* RWTSphere.fsh */; };
+		AB8CAFF720B6A2B400AEEFDC /* RWTBase.vsh in Resources */ = {isa = PBXBuildFile; fileRef = AB8CAFF120B6A2B400AEEFDC /* RWTBase.vsh */; };
+		AB8CAFF820B6A2B400AEEFDC /* RWTNoise.fsh in Resources */ = {isa = PBXBuildFile; fileRef = AB8CAFF220B6A2B400AEEFDC /* RWTNoise.fsh */; };
+		AB8CAFFD20B6B53400AEEFDC /* RWTSimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = AB8CAFFC20B6B53400AEEFDC /* RWTSimpleVertex.glsl */; };
+		AB8CAFFF20B6B59800AEEFDC /* RWTSimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = AB8CAFFE20B6B59800AEEFDC /* RWTSimpleFragment.glsl */; };
+		AB8CB00120B6BCE500AEEFDC /* RWTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8CB00020B6BCE500AEEFDC /* RWTView.swift */; };
+		AB8CB00320B6BD1300AEEFDC /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8CB00220B6BD1300AEEFDC /* Extension.swift */; };
+		AB8CB00520B828C100AEEFDC /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8CB00420B828C100AEEFDC /* Cube.swift */; };
+		AB8CB02D20BD17BD00AEEFDC /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8CB02C20BD17BD00AEEFDC /* Rocket.swift */; };
+		AB8CB02F20BD228D00AEEFDC /* AmbientLightingFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = AB8CB02E20BD228D00AEEFDC /* AmbientLightingFragment.glsl */; };
+		AB8CB03120BD54A600AEEFDC /* GLUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8CB03020BD54A600AEEFDC /* GLUtil.swift */; };
+		AB8CB03520BEBE6A00AEEFDC /* TexVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = AB8CB03420BEBE6900AEEFDC /* TexVertex.glsl */; };
+		AB8CB03720BEBE9F00AEEFDC /* TexFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = AB8CB03620BEBE9F00AEEFDC /* TexFragment.glsl */; };
 		AB9C5EDA20B3B997000E60E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9C5ED920B3B997000E60E9 /* AppDelegate.swift */; };
 		AB9C5EDC20B3B997000E60E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9C5EDB20B3B997000E60E9 /* ViewController.swift */; };
 		AB9C5EDF20B3B997000E60E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9C5EDD20B3B997000E60E9 /* Main.storyboard */; };
 		AB9C5EE120B3B999000E60E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB9C5EE020B3B999000E60E9 /* Assets.xcassets */; };
 		AB9C5EE420B3B999000E60E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9C5EE220B3B999000E60E9 /* LaunchScreen.storyboard */; };
+		AB9C5EEC20B3EB2F000E60E9 /* MyGLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9C5EEB20B3EB2F000E60E9 /* MyGLView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB0C65CE20BFA84500CA574A /* t.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = t.jpg; sourceTree = "<group>"; };
+		AB0C65D020BFA8B800CA574A /* h.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = h.jpg; sourceTree = "<group>"; };
+		AB0C65D420C01CBE00CA574A /* w.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = w.jpg; sourceTree = "<group>"; };
+		AB8CAFC720B5390500AEEFDC /* SimpleVertex.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SimpleVertex.glsl; sourceTree = "<group>"; };
+		AB8CAFC920B53A9100AEEFDC /* SimpleFragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SimpleFragment.glsl; sourceTree = "<group>"; };
+		AB8CAFED20B6A2B400AEEFDC /* RWTBase.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = RWTBase.fsh; sourceTree = "<group>"; };
+		AB8CAFEE20B6A2B400AEEFDC /* RWTMoon.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = RWTMoon.fsh; sourceTree = "<group>"; };
+		AB8CAFEF20B6A2B400AEEFDC /* RWTGradient.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = RWTGradient.fsh; sourceTree = "<group>"; };
+		AB8CAFF020B6A2B400AEEFDC /* RWTSphere.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = RWTSphere.fsh; sourceTree = "<group>"; };
+		AB8CAFF120B6A2B400AEEFDC /* RWTBase.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = RWTBase.vsh; sourceTree = "<group>"; };
+		AB8CAFF220B6A2B400AEEFDC /* RWTNoise.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = RWTNoise.fsh; sourceTree = "<group>"; };
+		AB8CAFFC20B6B53400AEEFDC /* RWTSimpleVertex.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; name = RWTSimpleVertex.glsl; path = ../../../../../Downloads/RWTSimpleVertex.glsl; sourceTree = "<group>"; };
+		AB8CAFFE20B6B59800AEEFDC /* RWTSimpleFragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = RWTSimpleFragment.glsl; sourceTree = "<group>"; };
+		AB8CB00020B6BCE500AEEFDC /* RWTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWTView.swift; sourceTree = "<group>"; };
+		AB8CB00220B6BD1300AEEFDC /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		AB8CB00420B828C100AEEFDC /* Cube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
+		AB8CB02C20BD17BD00AEEFDC /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
+		AB8CB02E20BD228D00AEEFDC /* AmbientLightingFragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = AmbientLightingFragment.glsl; sourceTree = "<group>"; };
+		AB8CB03020BD54A600AEEFDC /* GLUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLUtil.swift; sourceTree = "<group>"; };
+		AB8CB03420BEBE6900AEEFDC /* TexVertex.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = TexVertex.glsl; sourceTree = "<group>"; };
+		AB8CB03620BEBE9F00AEEFDC /* TexFragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = TexFragment.glsl; sourceTree = "<group>"; };
 		AB9C5ED620B3B997000E60E9 /* GLKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB9C5ED920B3B997000E60E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB9C5EDB20B3B997000E60E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +66,11 @@
 		AB9C5EE020B3B999000E60E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB9C5EE320B3B999000E60E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB9C5EE520B3B999000E60E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB9C5EEB20B3EB2F000E60E9 /* MyGLView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGLView.swift; sourceTree = "<group>"; };
+		AB9C5EEE20B40B09000E60E9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AB9C5EF020B40B10000E60E9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		AB9C5EF220B40B19000E60E9 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		AB9C5EF620B41EF6000E60E9 /* GLKitDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLKitDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +78,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB8CAFE920B6924700AEEFDC /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB8CAFF920B6A3AD00AEEFDC /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				AB8CAFED20B6A2B400AEEFDC /* RWTBase.fsh */,
+				AB8CAFEE20B6A2B400AEEFDC /* RWTMoon.fsh */,
+				AB8CAFEF20B6A2B400AEEFDC /* RWTGradient.fsh */,
+				AB8CAFF020B6A2B400AEEFDC /* RWTSphere.fsh */,
+				AB8CAFF120B6A2B400AEEFDC /* RWTBase.vsh */,
+				AB8CAFF220B6A2B400AEEFDC /* RWTNoise.fsh */,
+				AB8CAFC720B5390500AEEFDC /* SimpleVertex.glsl */,
+				AB8CAFC920B53A9100AEEFDC /* SimpleFragment.glsl */,
+				AB8CAFFC20B6B53400AEEFDC /* RWTSimpleVertex.glsl */,
+				AB8CAFFE20B6B59800AEEFDC /* RWTSimpleFragment.glsl */,
+				AB8CB02E20BD228D00AEEFDC /* AmbientLightingFragment.glsl */,
+				AB8CB03420BEBE6900AEEFDC /* TexVertex.glsl */,
+				AB8CB03620BEBE9F00AEEFDC /* TexFragment.glsl */,
+			);
+			path = Shader;
+			sourceTree = "<group>";
+		};
+		AB8CAFFB20B6B25A00AEEFDC /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
 		AB9C5ECD20B3B997000E60E9 = {
 			isa = PBXGroup;
 			children = (
 				AB9C5ED820B3B997000E60E9 /* GLKitDemo */,
 				AB9C5ED720B3B997000E60E9 /* Products */,
+				AB9C5EED20B40B09000E60E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +132,36 @@
 		AB9C5ED820B3B997000E60E9 /* GLKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				AB0C65D420C01CBE00CA574A /* w.jpg */,
+				AB0C65D020BFA8B800CA574A /* h.jpg */,
+				AB0C65CE20BFA84500CA574A /* t.jpg */,
 				AB9C5ED920B3B997000E60E9 /* AppDelegate.swift */,
 				AB9C5EDB20B3B997000E60E9 /* ViewController.swift */,
+				AB8CB00020B6BCE500AEEFDC /* RWTView.swift */,
+				AB9C5EEB20B3EB2F000E60E9 /* MyGLView.swift */,
+				AB8CB02C20BD17BD00AEEFDC /* Rocket.swift */,
+				AB8CB00420B828C100AEEFDC /* Cube.swift */,
+				AB8CB03020BD54A600AEEFDC /* GLUtil.swift */,
+				AB8CB00220B6BD1300AEEFDC /* Extension.swift */,
 				AB9C5EDD20B3B997000E60E9 /* Main.storyboard */,
-				AB9C5EE020B3B999000E60E9 /* Assets.xcassets */,
+				AB9C5EF620B41EF6000E60E9 /* GLKitDemo-Bridging-Header.h */,
 				AB9C5EE220B3B999000E60E9 /* LaunchScreen.storyboard */,
 				AB9C5EE520B3B999000E60E9 /* Info.plist */,
+				AB9C5EE020B3B999000E60E9 /* Assets.xcassets */,
+				AB8CAFF920B6A3AD00AEEFDC /* Shader */,
+				AB8CAFFB20B6B25A00AEEFDC /* Others */,
 			);
 			path = GLKitDemo;
+			sourceTree = "<group>";
+		};
+		AB9C5EED20B40B09000E60E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB9C5EF220B40B19000E60E9 /* GLKit.framework */,
+				AB9C5EF020B40B10000E60E9 /* OpenGLES.framework */,
+				AB9C5EEE20B40B09000E60E9 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +196,7 @@
 				TargetAttributes = {
 					AB9C5ED520B3B997000E60E9 = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -122,9 +223,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB8CAFF620B6A2B400AEEFDC /* RWTSphere.fsh in Resources */,
+				AB8CAFFD20B6B53400AEEFDC /* RWTSimpleVertex.glsl in Resources */,
 				AB9C5EE420B3B999000E60E9 /* LaunchScreen.storyboard in Resources */,
+				AB0C65CF20BFA84500CA574A /* t.jpg in Resources */,
+				AB8CAFF520B6A2B400AEEFDC /* RWTGradient.fsh in Resources */,
+				AB8CAFF820B6A2B400AEEFDC /* RWTNoise.fsh in Resources */,
+				AB8CB03720BEBE9F00AEEFDC /* TexFragment.glsl in Resources */,
+				AB8CB02F20BD228D00AEEFDC /* AmbientLightingFragment.glsl in Resources */,
+				AB8CAFC820B5390500AEEFDC /* SimpleVertex.glsl in Resources */,
 				AB9C5EE120B3B999000E60E9 /* Assets.xcassets in Resources */,
 				AB9C5EDF20B3B997000E60E9 /* Main.storyboard in Resources */,
+				AB0C65D520C01CBE00CA574A /* w.jpg in Resources */,
+				AB8CAFFF20B6B59800AEEFDC /* RWTSimpleFragment.glsl in Resources */,
+				AB0C65D120BFA8B800CA574A /* h.jpg in Resources */,
+				AB8CB03520BEBE6A00AEEFDC /* TexVertex.glsl in Resources */,
+				AB8CAFF420B6A2B400AEEFDC /* RWTMoon.fsh in Resources */,
+				AB8CAFF320B6A2B400AEEFDC /* RWTBase.fsh in Resources */,
+				AB8CAFF720B6A2B400AEEFDC /* RWTBase.vsh in Resources */,
+				AB8CAFCA20B53A9100AEEFDC /* SimpleFragment.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +252,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB8CB03120BD54A600AEEFDC /* GLUtil.swift in Sources */,
+				AB8CB02D20BD17BD00AEEFDC /* Rocket.swift in Sources */,
 				AB9C5EDC20B3B997000E60E9 /* ViewController.swift in Sources */,
+				AB8CB00320B6BD1300AEEFDC /* Extension.swift in Sources */,
+				AB8CB00520B828C100AEEFDC /* Cube.swift in Sources */,
+				AB8CB00120B6BCE500AEEFDC /* RWTView.swift in Sources */,
+				AB9C5EEC20B3EB2F000E60E9 /* MyGLView.swift in Sources */,
 				AB9C5EDA20B3B997000E60E9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +403,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QB846LS74R;
 				INFOPLIST_FILE = GLKitDemo/Info.plist;
@@ -289,6 +413,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.techcul.GLKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GLKitDemo/GLKitDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,6 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QB846LS74R;
 				INFOPLIST_FILE = GLKitDemo/Info.plist;
@@ -307,6 +434,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.techcul.GLKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GLKitDemo/GLKitDemo-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
