@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		AB0C65CF20BFA84500CA574A /* t.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0C65CE20BFA84500CA574A /* t.jpg */; };
 		AB0C65D120BFA8B800CA574A /* h.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0C65D020BFA8B800CA574A /* h.jpg */; };
-		AB0C65D520C01CBE00CA574A /* w.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0C65D420C01CBE00CA574A /* w.jpg */; };
+		AB0C65DA20C7A85400CA574A /* CopyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0C65D920C7A85300CA574A /* CopyView.swift */; };
+		AB0C65DC20C7D9FA00CA574A /* dungeon_01.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0C65DB20C7D9FA00CA574A /* dungeon_01.png */; };
 		AB8CAFC820B5390500AEEFDC /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = AB8CAFC720B5390500AEEFDC /* SimpleVertex.glsl */; };
 		AB8CAFCA20B53A9100AEEFDC /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = AB8CAFC920B53A9100AEEFDC /* SimpleFragment.glsl */; };
 		AB8CAFE920B6924700AEEFDC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9C5EF020B40B10000E60E9 /* OpenGLES.framework */; };
@@ -40,7 +41,8 @@
 /* Begin PBXFileReference section */
 		AB0C65CE20BFA84500CA574A /* t.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = t.jpg; sourceTree = "<group>"; };
 		AB0C65D020BFA8B800CA574A /* h.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = h.jpg; sourceTree = "<group>"; };
-		AB0C65D420C01CBE00CA574A /* w.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = w.jpg; sourceTree = "<group>"; };
+		AB0C65D920C7A85300CA574A /* CopyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyView.swift; sourceTree = "<group>"; };
+		AB0C65DB20C7D9FA00CA574A /* dungeon_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dungeon_01.png; sourceTree = "<group>"; };
 		AB8CAFC720B5390500AEEFDC /* SimpleVertex.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SimpleVertex.glsl; sourceTree = "<group>"; };
 		AB8CAFC920B53A9100AEEFDC /* SimpleFragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SimpleFragment.glsl; sourceTree = "<group>"; };
 		AB8CAFED20B6A2B400AEEFDC /* RWTBase.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = RWTBase.fsh; sourceTree = "<group>"; };
@@ -132,13 +134,14 @@
 		AB9C5ED820B3B997000E60E9 /* GLKitDemo */ = {
 			isa = PBXGroup;
 			children = (
-				AB0C65D420C01CBE00CA574A /* w.jpg */,
+				AB0C65DB20C7D9FA00CA574A /* dungeon_01.png */,
 				AB0C65D020BFA8B800CA574A /* h.jpg */,
 				AB0C65CE20BFA84500CA574A /* t.jpg */,
 				AB9C5ED920B3B997000E60E9 /* AppDelegate.swift */,
 				AB9C5EDB20B3B997000E60E9 /* ViewController.swift */,
 				AB8CB00020B6BCE500AEEFDC /* RWTView.swift */,
 				AB9C5EEB20B3EB2F000E60E9 /* MyGLView.swift */,
+				AB0C65D920C7A85300CA574A /* CopyView.swift */,
 				AB8CB02C20BD17BD00AEEFDC /* Rocket.swift */,
 				AB8CB00420B828C100AEEFDC /* Cube.swift */,
 				AB8CB03020BD54A600AEEFDC /* GLUtil.swift */,
@@ -234,9 +237,9 @@
 				AB8CAFC820B5390500AEEFDC /* SimpleVertex.glsl in Resources */,
 				AB9C5EE120B3B999000E60E9 /* Assets.xcassets in Resources */,
 				AB9C5EDF20B3B997000E60E9 /* Main.storyboard in Resources */,
-				AB0C65D520C01CBE00CA574A /* w.jpg in Resources */,
 				AB8CAFFF20B6B59800AEEFDC /* RWTSimpleFragment.glsl in Resources */,
 				AB0C65D120BFA8B800CA574A /* h.jpg in Resources */,
+				AB0C65DC20C7D9FA00CA574A /* dungeon_01.png in Resources */,
 				AB8CB03520BEBE6A00AEEFDC /* TexVertex.glsl in Resources */,
 				AB8CAFF420B6A2B400AEEFDC /* RWTMoon.fsh in Resources */,
 				AB8CAFF320B6A2B400AEEFDC /* RWTBase.fsh in Resources */,
@@ -254,6 +257,7 @@
 			files = (
 				AB8CB03120BD54A600AEEFDC /* GLUtil.swift in Sources */,
 				AB8CB02D20BD17BD00AEEFDC /* Rocket.swift in Sources */,
+				AB0C65DA20C7A85400CA574A /* CopyView.swift in Sources */,
 				AB9C5EDC20B3B997000E60E9 /* ViewController.swift in Sources */,
 				AB8CB00320B6BD1300AEEFDC /* Extension.swift in Sources */,
 				AB8CB00520B828C100AEEFDC /* Cube.swift in Sources */,

@@ -43,7 +43,7 @@
                         </connections>
                     </glkView>
                     <connections>
-                        <outlet property="imageView" destination="WQd-MH-pvU" id="HsK-Se-MuM"/>
+                        <outlet property="imageView" destination="WQd-MH-pvU" id="oJo-6k-jMe"/>
                         <outlet property="myGLView" destination="yeB-Xk-1bK" id="4xS-VF-lTf"/>
                     </connections>
                 </glkViewController>

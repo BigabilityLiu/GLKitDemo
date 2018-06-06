@@ -11,7 +11,7 @@ import GLKit
 
 class Cube: UIView {
     let cubePositions : [RWTVertex] = [
-        RWTVertex(1, 0, -5),
+        RWTVertex(1, 0, -2),
         RWTVertex(2, 4, -9),
         RWTVertex(-3, 5, -12),
         RWTVertex(-4, -6, -15),
@@ -21,40 +21,40 @@ class Cube: UIView {
     let vertexList : [TextureVertex] = [
         
         // Front
-        TextureVertex( 1, -1, 1,  1, 1, 1, 1,  1, 0), // 0
-        TextureVertex( 1,  1, 1,  1, 1, 1, 1,  1, 1), // 1
-        TextureVertex( -1,  1, 1,  1, 1, 1, 1,  0, 1), // 2
-        TextureVertex(-1, -1, 1,  1, 1, 1, 1,  0, 0), // 3
+        TextureVertex( 1, -1, 1,  1, 1, 1, 1,  1, 0,  0,  0,  1), // 0
+        TextureVertex( 1,  1, 1,  1, 1, 1, 1,  1, 1,  0,  0,  1), // 1
+        TextureVertex( -1, 1, 1,  1, 1, 1, 1,  0, 1,  0,  0,  1), // 2
+        TextureVertex(-1, -1, 1,  1, 1, 1, 1,  0, 0,  0,  0,  1), // 3
         
         // Back
-        TextureVertex(-1, -1, -1, 1, 1, 1, 1,  1, 0), // 4
-        TextureVertex(-1,  1, -1, 1, 1, 1, 1,  1, 1), // 5
-        TextureVertex( 1,  1, -1, 1, 1, 1, 1,  0, 1), // 6
-        TextureVertex( 1, -1, -1, 1, 1, 1, 1,  0, 0), // 7
+        TextureVertex(-1, -1, -1, 1, 1, 1, 1,  1, 0,  0,  0,  -1), // 4
+        TextureVertex(-1,  1, -1, 1, 1, 1, 1,  1, 1,  0,  0,  -1), // 5
+        TextureVertex( 1,  1, -1, 1, 1, 1, 1,  0, 1,  0,  0,  -1), // 6
+        TextureVertex( 1, -1, -1, 1, 1, 1, 1,  0, 0,  0,  0,  -1), // 7
         
         // Left
-        TextureVertex(-1, -1,  1, 1, 1, 1, 1,  1, 0), // 8
-        TextureVertex(-1,  1,  1, 1, 1, 1, 1,  1, 1), // 9
-        TextureVertex(-1,  1, -1, 1, 1, 1, 1,  0, 1), // 10
-        TextureVertex(-1, -1, -1, 1, 1, 1, 1,  0, 0), // 11
+        TextureVertex(-1, -1,  1, 1, 1, 1, 1,  1, 0,  -1,  0,  0), // 8
+        TextureVertex(-1,  1,  1, 1, 1, 1, 1,  1, 1,  -1,  0,  0), // 9
+        TextureVertex(-1,  1, -1, 1, 1, 1, 1,  0, 1,  -1,  0,  0), // 10
+        TextureVertex(-1, -1, -1, 1, 1, 1, 1,  0, 0,  -1,  0,  0), // 11
         
         // Right
-        TextureVertex( 1, -1, -1, 1, 1, 1, 1,  1, 0), // 12
-        TextureVertex( 1,  1, -1, 1, 1, 1, 1,  1, 1), // 13
-        TextureVertex( 1,  1,  1, 1, 1, 1, 1,  0, 1), // 14
-        TextureVertex( 1, -1,  1, 1, 1, 1, 1,  0, 0), // 15
+        TextureVertex( 1, -1, -1, 1, 1, 1, 1,  1, 0,  1,  0,  0), // 12
+        TextureVertex( 1,  1, -1, 1, 1, 1, 1,  1, 1,  1,  0,  0), // 13
+        TextureVertex( 1,  1,  1, 1, 1, 1, 1,  0, 1,  1,  0,  0), // 14
+        TextureVertex( 1, -1,  1, 1, 1, 1, 1,  0, 0,  1,  0,  0), // 15
         
         // Top
-        TextureVertex( 1,  1,  1, 1, 1, 1, 1,  1, 0), // 16
-        TextureVertex( 1,  1, -1, 1, 1, 1, 1,  1, 1), // 17
-        TextureVertex(-1,  1, -1, 1, 1, 1, 1,  0, 1), // 18
-        TextureVertex(-1,  1,  1, 1, 1, 1, 1,  0, 0), // 19
+        TextureVertex( 1,  1,  1, 1, 1, 1, 1,  1, 0,  0,  1,  0), // 16
+        TextureVertex( 1,  1, -1, 1, 1, 1, 1,  1, 1,  0,  1,  0), // 17
+        TextureVertex(-1,  1, -1, 1, 1, 1, 1,  0, 1,  0,  1,  0), // 18
+        TextureVertex(-1,  1,  1, 1, 1, 1, 1,  0, 0,  0,  1,  0), // 19
         
         // Bottom
-        TextureVertex( 1, -1, -1, 1, 1, 1, 1,  1, 0), // 20
-        TextureVertex( 1, -1,  1, 1, 1, 1, 1,  1, 1), // 21
-        TextureVertex(-1, -1,  1, 1, 1, 1, 1,  0, 1), // 22
-        TextureVertex(-1, -1, -1, 1, 1, 1, 1,  0, 0), // 23
+        TextureVertex( 1, -1, -1, 1, 1, 1, 1,  1, 0,  0,  -1,  0), // 20
+        TextureVertex( 1, -1,  1, 1, 1, 1, 1,  1, 1,  0,  -1,  0), // 21
+        TextureVertex(-1, -1,  1, 1, 1, 1, 1,  0, 1,  0,  -1,  0), // 22
+        TextureVertex(-1, -1, -1, 1, 1, 1, 1,  0, 0,  0,  -1,  0), // 23
         
     ]
     
@@ -95,6 +95,7 @@ class Cube: UIView {
     var positionSlot: GLuint = GLuint()
     var colorSlot: GLuint = GLuint()
     var textureSlot: GLuint = GLuint()
+    var normalSlot: GLuint = GLuint()
     
     var programHandle: GLuint = GLuint()
     var vao = GLuint()
@@ -103,6 +104,13 @@ class Cube: UIView {
     var projectionMatrixUniform: GLuint = GLuint()
     var textureUniform1: GLuint = GLuint()
     var textureUniform2: GLuint = GLuint()
+    
+    var lightColorUniform: GLuint = GLuint()
+    var lightAmbientIntensityUniform: GLuint = GLuint()
+    var lightDirectionUniform: GLuint = GLuint()
+    var lightDiffuseIntensityUniform: GLuint = GLuint()
+    
+    
     var modelViewMatrix: GLKMatrix4 = GLKMatrix4()
     var projectionMatrix: GLKMatrix4 = GLKMatrix4()
     
@@ -165,10 +173,10 @@ class Cube: UIView {
             self.programHandle = program
             glUseProgram(programHandle)
             
-            if let texture1 = GLUtil.getTextureImage(imageName: "w.jpg"){
+            if let texture1 = GLUtil.getTextureImage(imageName: "dungeon_01.png"){
                 self.texture1 = texture1
             }
-            if let texture2 = GLUtil.getTextureImage(imageName: "t.jpg"){
+            if let texture2 = GLUtil.getTextureImage(imageName: "h.jpg"){
                 self.texture2 = texture2
             }
         }
@@ -204,8 +212,16 @@ class Cube: UIView {
         self.colorSlot = GLuint(glGetAttribLocation(programHandle, "a_Color"))
         glEnableVertexAttribArray(self.colorSlot)
         self.textureSlot = GLuint(glGetAttribLocation(programHandle, "a_TexCoord"))
-        
         glEnableVertexAttribArray(self.textureSlot)
+        self.normalSlot = GLuint(glGetAttribLocation(programHandle, "a_Normal"))
+        glEnableVertexAttribArray(self.normalSlot)
+        
+        self.lightColorUniform = GLuint(glGetUniformLocation(programHandle, "u_Light.Color"))
+        self.lightAmbientIntensityUniform = GLuint(glGetUniformLocation(programHandle, "u_Light.AmbientIntensity"))
+        
+        self.lightDirectionUniform = GLuint(glGetUniformLocation(programHandle, "u_Light.Direction"))
+        self.lightDiffuseIntensityUniform = GLuint(glGetUniformLocation(programHandle, "u_Light.DiffuseIntensity"))
+        
         
         glVertexAttribPointer(self.positionSlot, 3,
                               GLenum(GL_FLOAT), GLboolean(GL_FALSE),
@@ -218,7 +234,11 @@ class Cube: UIView {
         glVertexAttribPointer(self.textureSlot, 2,
                               GLenum(GL_FLOAT), GLboolean(GL_FALSE),
                               GLsizei(MemoryLayout<TextureVertex>.size),
-                              GLUtil.BUFFER_OFFSET((3+4) * MemoryLayout<GLfloat>.size))
+                              GLUtil.BUFFER_OFFSET(MemoryLayout<GLfloat>.size * (3+4)))
+        glVertexAttribPointer(self.normalSlot, 3,
+                              GLenum(GL_FLOAT), GLboolean(GL_FALSE),
+                              GLsizei(MemoryLayout<TextureVertex>.size),
+                              GLUtil.BUFFER_OFFSET(MemoryLayout<GLfloat>.size * (3+4+2)))
         
         glBindVertexArrayOES(0)
         glBindBuffer(GLenum(GL_ARRAY_BUFFER), 0)
@@ -255,7 +275,7 @@ class Cube: UIView {
                                                     0, 0, 0,
                                                     0, 1, 0)
             self.modelViewMatrix = GLKMatrix4Multiply(lookatMatrix, self.modelViewMatrix)
-            self.projectionMatrix = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(85), Float(self.bounds.width / self.bounds.height), 1, 100)
+            self.projectionMatrix = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(60), Float(self.bounds.width / self.bounds.height), 1, 100)
             glViewport(0, 0, GLsizei(self.frame.width), GLsizei(self.frame.height))
             
             glUniformMatrix4fv(GLint(self.modelViewMatrixUniform), 1, GLboolean(GL_FALSE), self.modelViewMatrix.array)
@@ -280,6 +300,13 @@ class Cube: UIView {
             glTexParameteri(GLenum(GL_TEXTURE_2D), GLenum(GL_TEXTURE_WRAP_S), GLint(GL_REPEAT))
             glTexParameteri(GLenum(GL_TEXTURE_2D), GLenum(GL_TEXTURE_WRAP_T), GLint(GL_REPEAT))
             
+            glUniform3f(GLint(self.lightColorUniform), 1, 1, 1)
+            glUniform1f(GLint(self.lightAmbientIntensityUniform), 0.1)
+            let lightDirection = GLKVector3Normalize(GLKVector3.init(v: (0 , 1, -1)))
+            glUniform3f(GLint(self.lightDirectionUniform), lightDirection.x, lightDirection.y, lightDirection.z)
+            glUniform1f(GLint(self.lightDiffuseIntensityUniform), 0.7)
+            
+            
             glDrawElements(GLenum(GL_TRIANGLES), GLsizei(indexList.count), GLenum(GL_UNSIGNED_BYTE), nil)
             
             //        glDisableVertexAttribArray(self.positionSlot)
@@ -295,20 +322,13 @@ class Cube: UIView {
     var camZ: Float = 3
     func updateWIthDelta(dt: TimeInterval) -> UIImage?{
 //        self.rotationZ += Float.pi/2 * Float(dt)
-//        self.rotationY += Float.pi/4 * Float(dt)
+        self.rotationY += Float.pi/4 * Float(dt)
 //        self.rotationX += Float.pi/8 * Float(dt)
-        r += 1
-        camX = sin(Float(r)/100) * 20.0 // 左右动
-        camZ = cos(Float(r)/100) * 20.0 //前后动
+//        r += 1
+//        camX = sin(Float(r)/100) * 20.0 // 左右动
+//        camZ = cos(Float(r)/100) * 20.0 //前后动
         self.render()
-        if let image = self.getImage(){
-            print("not nil")
-            return image
-        }else {
-            print("nil")
-            return nil
-        }
-//        return self.getImage()
+        return self.getImage()
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -324,8 +344,8 @@ class Cube: UIView {
         
         glReadBuffer(GLenum(GL_COLOR_ATTACHMENT0))
         let t1 = Date()
-        glReadPixels(0, 0, width, height, GLenum(GL_RGBA), GLenum(GL_UNSIGNED_BYTE), &bytes)
-        /*
+//        glReadPixels(0, 0, width, height, GLenum(GL_RGBA), GLenum(GL_UNSIGNED_BYTE), &bytes)
+        
         // begin
         var textureCache: CVOpenGLESTextureCache?
         var renderTarget: CVPixelBuffer?
@@ -335,7 +355,7 @@ class Cube: UIView {
         var valueCallback = CFDictionaryValueCallBacks()
         CVOpenGLESTextureCacheCreate(kCFAllocatorDefault,
                                      nil,
-                                     CVEAGLContext(api: EAGLRenderingAPI.openGLES2)!,
+                                     self.context,
                                      nil,
                                      &textureCache)
         var empty = CFDictionaryCreate(kCFAllocatorDefault, nil, nil, 0, &keyCallback, &valueCallback)
@@ -360,32 +380,33 @@ class Cube: UIView {
                                                      GLenum(GL_UNSIGNED_BYTE),
                                                      0,
                                                      &renderTexture)
-        glBindTexture(CVOpenGLESTextureGetTarget(renderTexture!),CVOpenGLESTextureGetName(renderTexture!))
-        glTexParameterf(GLenum(GL_TEXTURE_2D),
-                        GLenum(GL_TEXTURE_WRAP_S),
-                        GLfloat(GL_CLAMP_TO_EDGE))
-        glTexParameterf(GLenum(GL_TEXTURE_2D),
-                        GLenum(GL_TEXTURE_WRAP_T),
-                        GLfloat(GL_CLAMP_TO_EDGE))
-        
-        glFramebufferTexture2D(GLenum(GL_FRAMEBUFFER),
-                               GLenum(GL_COLOR_ATTACHMENT0),
-                               GLenum(GL_TEXTURE_2D),
-                               CVOpenGLESTextureGetName(renderTexture!),
-                               GLint(0))
+   
+//        glBindTexture(CVOpenGLESTextureGetTarget(renderTexture!),CVOpenGLESTextureGetName(renderTexture!))
+//        glTexParameterf(GLenum(GL_TEXTURE_2D),
+//                        GLenum(GL_TEXTURE_WRAP_S),
+//                        GLfloat(GL_CLAMP_TO_EDGE))
+//        glTexParameterf(GLenum(GL_TEXTURE_2D),
+//                        GLenum(GL_TEXTURE_WRAP_T),
+//                        GLfloat(GL_CLAMP_TO_EDGE))
+//        
+//        glFramebufferTexture2D(GLenum(GL_FRAMEBUFFER),
+//                               GLenum(GL_COLOR_ATTACHMENT0),
+//                               GLenum(GL_TEXTURE_2D),
+//                               CVOpenGLESTextureGetName(renderTexture!),
+//                               GLint(0))
         
         CVPixelBufferLockBaseAddress(renderTarget!, CVPixelBufferLockFlags(rawValue: 0))
         var rawBytesForimage = CVPixelBufferGetBaseAddress(renderTarget!)
         //end
- */
+ 
         let gl_error = glGetError()
         if gl_error == 0 {
-            anUIImage = getUIImagefromRGBABuffer(src_buffer: &bytes, width: Int(width), height: Int(height))
-//            anUIImage = getUIImagefromRGBABuffer(src_buffer: rawBytesForimage!, width: Int(width), height: Int(height))
+//            anUIImage = getUIImagefromRGBABuffer(src_buffer: &bytes, width: Int(width), height: Int(height))
+            anUIImage = getUIImagefromRGBABuffer(src_buffer: rawBytesForimage!, width: Int(width), height: Int(height))
         } else {
             print("getFramebuffer3Images 1 glerror GL_COLOR_ATTACHMENT0:", gl_error)
         }
-//        CVPixelBufferUnlockBaseAddress(renderTarget!, CVPixelBufferLockFlags(rawValue: 0))
+        CVPixelBufferUnlockBaseAddress(renderTarget!, CVPixelBufferLockFlags(rawValue: 0))
         let str = String.init(format: "getFramebuffer:t1 %.5f",
                               DateInterval.init(start: t1, end: Date()).duration)
         print(str)

@@ -1,6 +1,6 @@
 struct Light {
     lowp vec3 Color;
-    lomp float AmbientIntensity;
+    lowp float AmbientIntensity;
 };
 uniform Light u_Light;
 
